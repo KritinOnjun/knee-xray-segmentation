@@ -22,6 +22,7 @@ A U-Net finds the knee bone (tibia) in 224x224 grayscale X-rays.
 | `main.py` | Runs everything |
 
 ## How to run
+First unzip `data.zip` here, so you get a `data/` folder (xrays, masks, test_masks).
 ```
 pip install torch torchvision opencv-python pandas matplotlib
 python data_preparation.py
