@@ -2,6 +2,16 @@
 
 Final project for Machine Vision and CNNs.
 A U-Net finds the knee bone (tibia) in 224x224 grayscale X-rays.
+## Model and license
+- Model: U-Net (UNetLext in model.py), trained from scratch on our own knee X-rays.
+  No pretrained weights were used.
+- Code source: model.py comes from the rocaseg package by MIPT-Oulu (University of Oulu),
+  written by Aleksei Tiulpin (2017):
+  https://github.com/MIPT-Oulu/RobustCartilageSegmentation (file rocaseg/models/unet_lext.py).
+  It is released under the MIT License (as stated in that project's setup.py).
+  I changed only small things (default width/depth, x.float(), and the warning).
+- U-Net architecture: Ronneberger, Fischer & Brox, MICCAI 2015.
+- Libraries: PyTorch (BSD-3-Clause), OpenCV (Apache 2.0), pandas (BSD-3-Clause), matplotlib.
 
 ## Results
 | | Dice |
